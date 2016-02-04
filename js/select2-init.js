@@ -1,8 +1,15 @@
 (function( $ ) {
-
 	$( '.cmb-type-pw-select .select2' ).each(function() {
 		$( this ).select2({
 			allowClear: true
+		});
+	});
+
+	$('.cmb-type-pw-tags .select2').each(function() {
+		console.log('salut les zouzous')
+		$(this).select2({
+			tags: true,
+			tokenSeparators: [',']
 		});
 	});
 
